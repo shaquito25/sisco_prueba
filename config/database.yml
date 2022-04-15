@@ -17,8 +17,8 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  # For details on connection pooling, see Rails configuration guide
-  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  host: localhost
+  port: 5432
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
   
@@ -26,7 +26,8 @@ default: &default
 development:
   <<: *default
   database: sisco_development
-  
+  username: marito
+  password: 2112
   
 
   # The specified database role being used to connect to postgres.
@@ -62,6 +63,8 @@ development:
 test:
   <<: *default
   database: sisco_test
+  username: marito
+  password: 2112
 
 
 # As with config/credentials.yml, you never want to store sensitive information,
@@ -86,7 +89,5 @@ test:
 #
 production:
   <<: *default
-  database: sisco_production
-  username: marito  
-  password: <%= ENV["SISCO_DATABASE_PASSWORD"] %>
-  host: localhost
+  
+
