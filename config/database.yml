@@ -19,8 +19,8 @@ default: &default
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   database: sisco_production
-  username: marito
-  password: 2112
+  username: arto18
+  password: password
 
 
 development:
