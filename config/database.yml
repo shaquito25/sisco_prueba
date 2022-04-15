@@ -89,3 +89,4 @@ production:
   database: sisco_production
   username: marito  
   password: <%= ENV["SISCO_DATABASE_PASSWORD"] %>
+  host: localhost
