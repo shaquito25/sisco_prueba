@@ -1,0 +1,68 @@
+<head>
+  <%= stylesheet_link_tag "form", "data-turbo-track": "reload" %>
+</head>
+
+  <div class='container form-container'> 
+<%= form_with(model: user) do |form| %>
+  <% if user.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% user.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class='container form-tags-container'>
+
+  <div class='p-2'>
+    <%= form.label :persona, style: "display: block" %>
+    <%= form.select :persona , ['Natural', 'Juridica'] %>
+  </div>
+
+  <div class='p-2'>
+    <%= form.label :documento, style: "display: block" %>
+    <%= form.text_field :documento, :placeholder => 'Ingrese el documento'%>
+  </div>
+
+  <div class='p-2'>
+    <%= form.label :emision, style: "display: block" %>
+    <%= form.date_field :emision %>
+  </div>
+
+  <div class='p-2'>
+    <%= form.label :vencimiento, style: "display: block" %>
+    <%= form.date_field :vencimiento %>
+  </div>
+
+  <div class='p-2'>
+    <%= form.label :nombre, style: "display: block" %>
+    <%= form.text_field :nombre, :placeholder => 'Ingrese su nombre' %>
+  </div>
+
+  <div class='p-2'>
+    <%= form.label :corre, style: "display: block" %>
+    <%= form.text_field :corre, :placeholder => 'Ingrese su correo' %>
+  </div>
+
+  <div class='p-2'>
+    <%= form.label :telefono_principal, style: "display: block" %>
+    <%= form.text_field :telefono_principal, :placeholder => 'Ingrese su telefono principal' %>
+  </div>
+
+  <div class='p-2'>
+    <%= form.label :telefono_secundario, style: "display: block" %>
+    <%= form.text_field :telefono_secundario, :placeholder => 'Telefono Opcional' %>
+  </div>
+
+  <div class='p-2 button'>
+    <%= form.submit %>
+  </div>
+<% end %>
+</div>
+ </div>
+
+

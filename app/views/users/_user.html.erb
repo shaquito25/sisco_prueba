@@ -1,0 +1,53 @@
+<head>
+  <%= stylesheet_link_tag "detail", "data-turbo-track": "reload" %>
+</head>
+
+<div id="<%= dom_id user %>" class='container detail-container'>
+  <p>
+    <strong>Persona:</strong>
+    <%= user.persona %>
+    <hr>
+  </p>
+
+  <p>
+    <strong>Documento:</strong>
+    <%= user.documento %>
+    <hr>
+  </p>
+
+  <p>
+    <strong>Emision:</strong>
+    <%= user.emision %>
+    <hr>
+  </p>
+
+  <p>
+    <strong>Vencimiento:</strong>
+    <%= user.vencimiento %>
+    <hr>
+  </p>
+
+  <p>
+    <strong>Nombre:</strong>
+    <%= user.nombre %>
+    <hr>
+  </p>
+
+  <p>
+    <strong>Correo:</strong>
+    <%= user.corre %>
+    <hr>
+  </p>
+
+  <p>
+    <strong>Telefono principal:</strong>
+    <%= user.telefono_principal %>
+    <hr>
+  </p>
+
+  <p>
+    <strong>Telefono secundario:</strong>
+    <%= user.telefono_secundario %>
+    <hr>
+  </p>
+</div>

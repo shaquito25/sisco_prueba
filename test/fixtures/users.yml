@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  persona: MyString
+  documento: MyString
+  emision: 2022-04-14
+  vencimiento: 2022-04-14
+  nombre: MyString
+  corre: MyString
+  telefono_principal: MyString
+  telefono_secundario: MyString
+
+two:
+  persona: MyString
+  documento: MyString
+  emision: 2022-04-14
+  vencimiento: 2022-04-14
+  nombre: MyString
+  corre: MyString
+  telefono_principal: MyString
+  telefono_secundario: MyString

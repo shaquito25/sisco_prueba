@@ -1,0 +1,17 @@
+<head>
+  <%= stylesheet_link_tag "lista", "data-turbo-track": "reload" %>
+</head>
+
+  <div class='container users-container'>
+  <p class='bg-success'><%= notice %></p>
+    <h1>Lista de Usuarios</h1>
+    <div id="users" class='row'>
+        <% @users.each do |user| %>
+          <div class='user-container col-lg-2 col-md-12 col-sm-12'> 
+            <%= render user %> 
+            <%= link_to "Mostrar Usuario", user %>
+          </div>
+         <% end %>
+    </div>
+     <%= link_to "Nuevo Usuario", new_user_path %>
+</div>

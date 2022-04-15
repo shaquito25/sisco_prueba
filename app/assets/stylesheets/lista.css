@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --color1:#000004;
+    --color2:#1f264b;
+    --color3:#4d569c;
+    --color4:#868df9;
+    --color5:#c9caff;
+}
+ 
+/*Lista de Usuarios*/
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    align-items: center;
+    background-color: var(--color5);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.users-container{
+    align-items: center;
+    background-color: var(--color1);
+    border-radius: 30px;
+    display: flex;
+    font-weight: 700;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    padding: 15px;
+}
+
+#users{
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.user-container{
+    border: 1px solid var(--color5);
+    border-radius: 30px;
+    background-color:var(--color2);
+    margin: 20px;
+    min-width: 30vw;
+    padding: 15px;
+}
+a{
+    color:white;
+}
+
+a:hover{
+    color: var(--color4);
+}
+
